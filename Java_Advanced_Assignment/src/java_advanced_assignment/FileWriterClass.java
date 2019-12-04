@@ -11,15 +11,16 @@ public class FileWriterClass{
 
     public static void main(String[] args) throws IOException{
        
-        BufferedReader reader = new BufferedReader(new FileReader("12345.txt"));
-        int lines = 0;
-        while (reader.readLine() != null)
-            lines++;
-        reader.close();
+        int lines;
+        try (BufferedReader reader = new BufferedReader(new FileReader("12345.txt"))) {
+            lines = 0;
+            while (reader.readLine() != null)
+                lines++;
+        }
         
         final int SIZE = lines;
         int[] numbers = new int[SIZE];
-        int result, searchValue;
+        //int result, searchValue;
         
         int index = 0;
         
@@ -33,7 +34,7 @@ public class FileWriterClass{
         
         FileWriterClass ob = new FileWriterClass();
          int arr[] = numbers;
-         ob.bubbleSort(arr);
+         FileWriterClass.bubbleSort(arr);
          System.out.println("Sorted Text File:");
          ob.printArray(arr);
     }
