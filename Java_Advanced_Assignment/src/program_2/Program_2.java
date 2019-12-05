@@ -9,7 +9,7 @@ import java.util.Scanner;
 public class Program_2 {
     
     public static void main(String[] args) throws IOException {
-        File file = new File("123456.txt");
+        File file = new File("C:\\Users\\nickp\\Documents\\NetBeansProjects\\Advanced_Java\\Advanced_Java\\Java_Advanced_Assignment\\src\\program_2\\123456.txt");
         String[] words;
         words = null;
         try (FileReader FR = new FileReader(file)) {
@@ -25,13 +25,11 @@ public class Program_2 {
                 for (String word : words){
                     if (word.equals(input)){
                         count++;
-                    }/*
-                    
                     }
-                    }*/
+                }
+            }
             if(count!=0){
                 System.out.println("The given word is present for "+count+" times");
-                
             }
             else{
                 System.out.println("The given word is not present in the text file");
@@ -40,7 +38,9 @@ public class Program_2 {
             } 
 
         }
-    }
-}
+    
+
+
+
     
     

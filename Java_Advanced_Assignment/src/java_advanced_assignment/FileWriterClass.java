@@ -12,7 +12,7 @@ public class FileWriterClass{
     public static void main(String[] args) throws IOException{
        
         int lines;
-        try (BufferedReader reader = new BufferedReader(new FileReader("12345.txt"))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\nickp\\Documents\\NetBeansProjects\\Advanced_Java\\Advanced_Java\\Java_Advanced_Assignment\\src\\java_advanced_assignment\\12345.txt"))) {
             lines = 0;
             while (reader.readLine() != null)
                 lines++;
