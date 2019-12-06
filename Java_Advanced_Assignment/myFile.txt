@@ -1,6 +1,2 @@
-AppleOrangeBananaApple
-AppleOrangeBananaApple
-Apple
-Orange
-Banana
-Apple
+
+
