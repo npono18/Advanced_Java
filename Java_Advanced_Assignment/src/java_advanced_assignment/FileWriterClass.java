@@ -1,4 +1,4 @@
-package java_advanced_assignment;
+    package java_advanced_assignment;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -24,7 +24,7 @@ public class FileWriterClass{
         
         int index = 0;
         
-        File file = new File("12345.txt");
+        File file = new File("C:\\Users\\nickp\\Documents\\NetBeansProjects\\Advanced_Java\\Advanced_Java\\Java_Advanced_Assignment\\src\\java_advanced_assignment\\12345.txt");
         Scanner inputFile = new Scanner(file);
         bubbleSort(numbers);
         while (inputFile.hasNextInt() && index < numbers.length){
